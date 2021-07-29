@@ -77,9 +77,68 @@
               K<span style="color:#E04343;">a</span>RTIK<br />
               <span>W<span style="color:#FFE800">A</span>LKE</span>
             </h1><!-- Title -->
-            <h3 class="animated fadeInUp delay-05s"
-              style="position: sticky; text-align: right !important; margin-right: 320px;"><span
-                class="rotate">Web,,App</span> Developer</h3><!-- Text Rotator -->
+            <h3>
+            <span class="txt-rotate rotate" data-period="2000" data-rotate='[ "Web Developer", "App Developer"]'></span>
+          </h3>
+            <script>
+              var TxtRotate = function (el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+              };
+
+              TxtRotate.prototype.tick = function () {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+
+                if (this.isDeleting) {
+                  this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                  this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+
+                this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+                var that = this;
+                var delta = 300 - Math.random() * 100;
+
+                if (this.isDeleting) { delta /= 2; }
+
+                if (!this.isDeleting && this.txt === fullTxt) {
+                  delta = this.period;
+                  this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                  this.isDeleting = false;
+                  this.loopNum++;
+                  delta = 500;
+                }
+
+                setTimeout(function () {
+                  that.tick();
+                }, delta);
+              };
+
+              window.onload = function () {
+                var elements = document.getElementsByClassName('txt-rotate');
+                for (var i = 0; i < elements.length; i++) {
+                  var toRotate = elements[i].getAttribute('data-rotate');
+                  var period = elements[i].getAttribute('data-period');
+                  if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                  }
+                }
+                // INJECT CSS
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                document.body.appendChild(css);
+              };
+            </script>
+
           </div>
         </div>
         <!-- Learn More Button -->
@@ -112,7 +171,8 @@
         <div class="col-md-8 col-md-offset-2 wp1">
           <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
           <!-- about / welcome text -->
-          <h3 style="color: white">After working in some good projects looking forward to<br> work on some new technologies and explore a lot new
+          <h3 style="color: white">After working in some good projects looking forward to<br> work on some new
+            technologies and explore a lot new
             things.</h3>
         </div>
       </div>
@@ -268,8 +328,8 @@
           <ul class="slides">
             <li>
               <!-- Blog Entry 4 -->
-              
-          <h2>Android Projects</h2><!-- Headline -->
+
+              <h2>Android Projects</h2><!-- Headline -->
               <div class="col-md-4 wp4">
                 <div class="overlay-effect effects clearfix">
                   <div class="img">
@@ -316,8 +376,8 @@
             </li>
             <li>
               <!-- Blog Entry 1 -->
-              
-          <h2>Web Development Projects</h2><!-- Headline -->
+
+              <h2>Web Development Projects</h2><!-- Headline -->
               <div class="col-md-4 wp4">
                 <div class="overlay-effect effects clearfix">
                   <div class="img">
@@ -345,7 +405,7 @@
                   => Simple Calculator which we use in general<br>
                   => Pointer Calculations implemented
                 </p><!-- Description-->
-                </div>
+              </div>
               <!-- Blog Entry 2 -->
               <div class="col-md-4 wp4 delay-05s">
                 <div class="overlay-effect effects clearfix">
@@ -361,10 +421,10 @@
                   ( Create, Read, Update, Delete )
                 </p><!-- Description -->
               </div>
-              </li>
+            </li>
 
-            </ul>
-          </div>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -379,10 +439,11 @@
   <div class="spacer-cta text-center">
     <div class="container">
       <div class="row" style="background-color: black; margin-top: -150px; padding: 50px; border-radius: 10px;">
-        <h1 class="title col-md-4" >Start a project</h1>
+        <h1 class="title col-md-4">Start a project</h1>
         <h3 class="col-md-4" style="color: #a1a9b0;">Interested in working together ?<br> Contact Now.</h3>
         <div class="col-md-4">
-          <a href="mailto:kdtech500@gmail.com?subject=Interesting in working together" class="outlinne-btn">Let's do it</a>
+          <a href="mailto:kdtech500@gmail.com?subject=Interesting in working together" class="outlinne-btn">Let's do
+            it</a>
         </div>
       </div>
     </div>
