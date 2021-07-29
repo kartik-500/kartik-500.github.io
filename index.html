@@ -1,1 +1,494 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/main.a617e044.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><script>!function(e){function t(t){for(var n,i,a=t[0],c=t[1],l=t[2],s=0,p=[];s<a.length;s++)i=a[s],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&p.push(o[i][0]),o[i]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(f&&f(t);p.length;)p.shift()();return u.push.apply(u,l||[]),r()}function r(){for(var e,t=0;t<u.length;t++){for(var r=u[t],n=!0,a=1;a<r.length;a++){var c=r[a];0!==o[c]&&(n=!1)}n&&(u.splice(t--,1),e=i(i.s=r[0]))}return e}var n={},o={1:0},u=[];function i(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.e=function(e){var t=[],r=o[e];if(0!==r)if(r)t.push(r[2]);else{var n=new Promise((function(t,n){r=o[e]=[t,n]}));t.push(r[2]=n);var u,a=document.createElement("script");a.charset="utf-8",a.timeout=120,i.nc&&a.setAttribute("nonce",i.nc),a.src=function(e){return i.p+"static/js/"+({}[e]||e)+"."+{3:"fed037ab"}[e]+".chunk.js"}(e);var c=new Error;u=function(t){a.onerror=a.onload=null,clearTimeout(l);var r=o[e];if(0!==r){if(r){var n=t&&("load"===t.type?"missing":t.type),u=t&&t.target&&t.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,r[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:a})}),12e4);a.onerror=a.onload=u,document.head.appendChild(a)}return Promise.all(t)},i.m=e,i.c=n,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)i.d(r,n,function(t){return e[t]}.bind(null,n));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/",i.oe=function(e){throw console.error(e),e};var a=this.webpackJsonptodo_list=this.webpackJsonptodo_list||[],c=a.push.bind(a);a.push=t,a=a.slice();for(var l=0;l<a.length;l++)t(a[l]);var f=c;r()}([])</script><script src="/static/js/2.5fc55ee0.chunk.js"></script><script src="/static/js/main.cbde41e5.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Website Title -->
+  <title>Kartik Walke - Developer</title>
+  <!-- Bootstrap -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font-Awesome -->
+  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Lightbox -->
+  <link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+  <!-- Text Rotator-->
+  <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+  <!-- FlexSlider -->
+  <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+  <!-- Theme Style -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Animations -->
+  <link href="css/animate.css" rel="stylesheet">
+  <!-- Custom Favicon -->
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="top">
+
+  <!-- ****************************** Preloader ************************** -->
+  <div id="preloader"></div>
+
+
+  <!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+  <header id="home">
+    <!-- creative menu -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="menu-wrap">
+          <nav class="menu">
+            <!-- Menu Links -->
+            <div class="icon-list">
+              <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+              <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+              <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+              <a href="index.html#technologies"><i class="fa fa-fw fa-desktop"></i><span>Technologies</span></a>
+              <a href="index.html#projects"><i class="fa fa-fw fa-file-archive-o"></i><span>Projects</span></a>
+            </div>
+          </nav>
+        </div>
+        <button class="menu-button" id="open-button"></button><!-- menu button -->
+      </div>
+      <!--/row-->
+    </div>
+    <!--/container-->
+    <!-- Header Image -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <!-- Slider Button (don't edit!)-->
+        <div class="row">
+          <div class="col-md-12 text-right navicon">
+            <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+          </div>
+        </div>
+        <!-- HEADER HEADLINE -->
+        <div class="row">
+          <div class="col-md-8 my-10 inner">
+            <h1 class="animated fadeInDown">
+              K<span style="color:#E04343;">a</span>RTIK<br />
+              <span>W<span style="color:#FFE800">A</span>LKE</span>
+            </h1><!-- Title -->
+            <h3 class="animated fadeInUp delay-05s"
+              style="position: sticky; text-align: right !important; margin-right: 320px;"><span
+                class="rotate">Web,,App</span> Developer</h3><!-- Text Rotator -->
+          </div>
+        </div>
+        <!-- Learn More Button -->
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+              <p>SEE MORE</p>
+              <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header Image End -->
+  </header>
+  <!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+
+
+
+
+  <!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+  <section class="intro text-center section-padding color-bg" id="about">
+    <div class="container">
+      <!-- WELCOME TEXT -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 wp1">
+          <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
+          <!-- about / welcome text -->
+          <h3 style="color: white">After working in some good projects looking forward to<br> work on some new technologies and explore a lot new
+            things.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+  <section class="features text-center section-padding" id="service">
+    <div class="container">
+      <!-- Headline -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="arrow">What I <span>do</span></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="services">
+            <!-- Service Box 1 -->
+            <div class="col-md-4 wp2 item">
+              <div class="icon">
+                <i class="fa fa-desktop"></i><!-- Icon -->
+              </div>
+              <h2>Web Developer</h2><!-- Title -->
+              <p>Building some complex Web-Apps with some of the new technologies in market</p><!-- Description -->
+            </div>
+            <!-- Service Box 2 -->
+            <div class="col-md-4 wp2 item delay-05s">
+              <div class="icon">
+                <i class="fa fa-android"></i><!-- Icon -->
+              </div>
+              <h2>Android App Developer</h2><!-- Title -->
+              <p>Building android applications on client's requirements. Sucessfully built 10+ android applications</p>
+              <!-- Description -->
+            </div>
+            <!-- Service Box 3 -->
+            <div class="col-md-4 wp2 item delay-05s">
+              <div class="icon">
+                <i class="fa fa-file-text-o"></i><!-- Icon -->
+              </div>
+              <h2>PHP Web Developer</h2><!-- Title -->
+              <p>Responsible for writing server-side web application logic.
+                I usually develop back-end components, connect the application with
+                the other web services.</p><!-- Description -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class=" text-center" id="technologies" style="padding-top: 0px !important; padding-bottom: 50px;">
+    <h1 class="arrow"><span>Technologies</span> I've worked on</h1>
+  </section>
+
+  <div class="container-fluid">
+    <!-- About 1 -->
+    <div class="row color-bg align-middle">
+      <div class="col-md-6 nopadding features-intro-img">
+        <div class="about-image" style="background-image:url(img/about1.jpg)"></div><!-- about image 1 -->
+      </div>
+      <div class="col-md-6 about-text">
+        <h6>Native Android App Development</h6><!-- headline-->
+
+
+        <ul class="py-5" style="color: white;">
+          <li>JAVA</li>
+          <li>XML</li>
+          <li>Firebase</li>
+          <li>MySQL</li>
+        </ul>
+
+
+        <br><!-- About Text 1 -->
+        <a href="index.html#projects" class="weight-outline-btn">See Projects</a><!-- read more button  -->
+      </div>
+    </div>
+    <!-- About 2 -->
+    <div class="row">
+      <div class="col-md-6 about-text">
+        <h6>Front-End Development</h6><!-- Headline -->
+
+
+        <ul style="color: grey">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <ul style="list-style-type:circle; margin-top: 0px !important;">
+            <li>ReactJS</li>
+            <li>AngularJS</li>
+          </ul>
+        </ul>
+
+
+        <br><!-- About Text 2 -->
+        <a href="index.html#projects" class="weight-outline-btn">See Projects</a> <!-- read more button  -->
+      </div>
+      <div class="col-md-6 nopadding features-intro-img">
+        <div class="about-image" style="background-image:url(img/about2.jpg)"></div><!-- about image 2 -->
+      </div>
+    </div>
+    <!-- About 3 -->
+    <div class="row color-bg">
+      <div class="col-md-6 nopadding features-intro-img">
+        <div class="about-image" style="background-image:url(img/about3.jpg)"></div><!-- about image 3 -->
+      </div>
+      <div class="col-md-6 about-text">
+        <h6>Back-End Development</h6><!-- Headline-->
+
+
+        <ul style="color: white;">
+          <li>PHP</li>
+          <li>NodeJS</li>
+          <li>Firebase</li>
+          <li>MySQL</li>
+        </ul>
+
+
+        <br><!-- About Text 3 -->
+        <a href="index.html#projects" class="weight-outline-btn">See Projects</a><!-- read more button  -->
+      </div>
+    </div>
+  </div>
+  <!-- ==========================
+        ABOUT SECTION END
+        =========================== -->
+
+
+  <!-- ==========================
+        BLOG SECTION 
+        =========================== -->
+  <section class="text-center section-padding" id="projects">
+    <div class="container">
+      <!-- Headline -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="arrow">My <span>Projects</span></h1>
+        </div>
+      </div><br><br>
+
+      <!-- Blog Slider -->
+      <div class="row">
+        <div id="blogSlider">
+          <ul class="slides">
+            <li>
+              <!-- Blog Entry 4 -->
+              
+          <h2>Android Projects</h2><!-- Headline -->
+              <div class="col-md-4 wp4">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/project2-1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                  </div>
+                </div>
+                <br>
+                <h2>College Management</h2><!-- Headline -->
+                <p>
+                  => Admin, Teacher, Student's login<br>
+                  => Add Notices, Notes, Attendance<br>
+                  => Notifications& Realtime Update
+                </p><!-- Description -->
+              </div>
+              <!-- Blog Entry 5 -->
+              <div class="col-md-4 wp4 delay-05s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/project2-2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                  </div>
+                </div>
+                <br>
+                <h2>Blood Bank</h2>
+                <p>
+                  => Donor, Blood Bank, Admin login<br>
+                  => Add Bloodbank, Manage Donor
+                </p>
+              </div>
+              <!-- Blog Entry 6 -->
+              <div class="col-md-4 wp4 delay-1s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/project2-3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                  </div>
+                </div>
+                <br>
+                <h2>Education Portal</h2><!-- Headline -->
+                <p>
+                  => Student login<br>
+                  => Parsing JSON<br>
+                  => Saving result to Databases
+                </p><!-- Description -->
+              </div>
+            </li>
+            <li>
+              <!-- Blog Entry 1 -->
+              
+          <h2>Web Development Projects</h2><!-- Headline -->
+              <div class="col-md-4 wp4">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/project1-1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                  </div>
+                </div>
+                <br>
+                <h2>Blog Website</h2><!-- Headline -->
+                <p>
+                  => Built a Blog Website as per client's requirements<br>
+                  => CRUD Operations implemented in PHP<br>
+                  ( Create, Read, Update, Delete )
+                </p><!-- Description-->
+              </div>
+              <!-- Blog Entry 3 -->
+              <div class="col-md-4 wp4 delay-1s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/project1-3.png" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                  </div>
+                </div>
+                <br>
+                <h2>Calculator in PHP</h2><!-- Headline -->
+                <p>
+                  => Simple Calculator which we use in general<br>
+                  => Pointer Calculations implemented
+                </p><!-- Description-->
+                </div>
+              <!-- Blog Entry 2 -->
+              <div class="col-md-4 wp4 delay-05s">
+                <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                    <img src="img/project1-2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                  </div>
+                </div>
+                <br>
+                <h2>Dashboard in PHP</h2><!-- Headline -->
+                <p>
+                  => Fully Functional Dashboard in HTML, CSS, Bootstrap
+                  => CRUD Operations implemented in PHP<br>
+                  ( Create, Read, Update, Delete )
+                </p><!-- Description -->
+              </div>
+              </li>
+
+            </ul>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==========================
+        BLOG SECTION END
+        =========================== -->
+
+
+  <!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+  <div class="spacer-cta text-center">
+    <div class="container">
+      <div class="row" style="background-color: black; margin-top: -150px; padding: 50px; border-radius: 10px;">
+        <h1 class="title col-md-4" >Start a project</h1>
+        <h3 class="col-md-4" style="color: #a1a9b0;">Interested in working together ?<br> Contact Now.</h3>
+        <div class="col-md-4">
+          <a href="mailto:kdtech500@gmail.com?subject=Interesting in working together" class="outlinne-btn">Let's do it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+
+
+
+  <!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+  <!-- Footer -->
+  <footer class="page-footer font-small spacer-cta" style="overflow-x: hidden; padding-top: 0px !important;">
+    <div class="row text-center">
+      <div class="col-md-12 mb-5">
+        <ul class="social-buttons">
+          <li><a href="https://www.linkedin.com/in/kartik-walke-303a5916a/" class="social-btn"><i
+                class="fa fa-linkedin"></i></a></li><!-- deviantart -->
+          <li><a href="https://www.instagram.com/m_r.kartik/" class="social-btn"><i class="fa fa-instagram"></i></a>
+          </li><!-- youtube -->
+          <li><a href="https://github.com/kartik-500" class="social-btn"><i class="fa fa-github"></i></a></li>
+          <!-- youtube -->
+        </ul>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <br>
+    <div class="footer-copyright text-center py-3" style="color: white;">© 2021 Copyright: Kartik Walke
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  <!-- ==========================
+        FOOTER SECTION END
+        =========================== -->
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- SmoothScroll -->
+  <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Waypoints -->
+  <script src="js/waypoints.min.js"></script>
+  <!-- classie.js -->
+  <script src="js/classie.js"></script>
+  <!-- FlexSlider -->
+  <script src="assets/flexslider/jquery.flexslider.js"></script>
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+  <!-- Text Rotator -->
+  <script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+  <!-- Lightbox.js -->
+  <script src="assets/lightbox/js/lightbox.min.js"></script>
+  <!-- Google Maps -->
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
+  <!-- Theme JavaScript Core -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- GOOGLE MAPS DATA -->
+  <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
+
+    function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 15,
+
+        scrollwheel: false,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York 
+
+        // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{ featureType: 'water', stylers: [{ color: '#F2F2F2' }, { visibility: 'on' }] }, { featureType: 'landscape', stylers: [{ color: '#FFFFFF' }] }, { featureType: 'road', stylers: [{ saturation: -100 }, { lightness: 45 }] }, { featureType: 'road.highway', stylers: [{ visibility: 'simplified' }] }, { featureType: 'road.arterial', elementType: 'labels.icon', stylers: [{ visibility: 'off' }] }, { featureType: 'administrative', elementType: 'labels.text.fill', stylers: [{ color: '#ADADAD' }] }, { featureType: 'transit', stylers: [{ visibility: 'off' }] }, { featureType: 'poi', stylers: [{ visibility: 'off' }] }]
+      };
+
+      // Get the HTML DOM element that will contain your map 
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('googlemaps');
+
+      // Create the Google Map using out element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+    }
+
+  </script>
+
+  <!-- TEXT ROTATOR SETTINGS -->
+  <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    });
+  </script>
+
+</body>
+
+</html>
